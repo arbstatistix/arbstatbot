@@ -6,7 +6,7 @@ This document explains the structure and format of the three main JSON configura
 
 ## 1. config.json
 
-**Location:** `/home/mate/Desktop/github/llm/email_agent/config.json`
+**Location:** `email_agent/config.json`
 
 **Purpose:** Main configuration file for the application. Controls all settings for model paths, Google Sheets, and email campaigns.
 
@@ -90,7 +90,7 @@ This document explains the structure and format of the three main JSON configura
 
 ## 2. credentials.json
 
-**Location:** `/home/mate/Desktop/github/llm/email_agent/credentials.json`
+**Location:** `email_agent/credentials.json`
 
 **Purpose:** Contains OAuth 2.0 credentials from Google Cloud Console. Needed for authentication.
 
@@ -148,7 +148,7 @@ This document explains the structure and format of the three main JSON configura
 
 ## 3. token.json
 
-**Location:** `/home/mate/Desktop/github/llm/email_agent/token.json`
+**Location:** `email_agent/token.json`
 
 **Purpose:** Stores OAuth 2.0 access tokens after user authorization. **Auto-generated** on first run.
 

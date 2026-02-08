@@ -6,20 +6,20 @@
 
 1. **`config.json`** - Main configuration file (located in `email_agent/`)
    - Format: JSON
-   - Location: `/home/mate/Desktop/github/llm/email_agent/config.json`
+   - Location: `email_agent/config.json`
    - Purpose: Stores all settings (Spreadsheet ID, model path, email configuration)
    - **DANGER:** Add to `.gitignore` to prevent committing sensitive data
 
 2. **`credentials.json`** - Google OAuth credentials (located in `email_agent/`)
    - Format: JSON (downloaded from Google Cloud Console)
-   - Location: `/home/mate/Desktop/github/llm/email_agent/credentials.json`
+   - Location: `email_agent/credentials.json`
    - Purpose: OAuth 2.0 authentication for Google Sheets & Gmail APIs
    - **DANGER:** Contains client_secret - NEVER commit to version control!
    - How to get: See [Google Credentials Setup](#google-credentials-setup) section
 
 3. **`token.json`** - Google API access token (AUTO-GENERATED)
    - Format: JSON (auto-created on first run)
-   - Location: `/home/mate/Desktop/github/llm/email_agent/token.json`
+   - Location: `email_agent/token.json`
    - Purpose: Stores access tokens after user authorization
    - **DANGER:** Contains access tokens - NEVER commit to version control!
    - When created: Automatically generated after first authorization
@@ -79,7 +79,7 @@ A comprehensive end-to-end email campaign management system with lead tracking, 
 ### Step 1: Clone and Navigate to Project
 
 ```bash
-cd /home/mate/Desktop/github/llm/email_agent
+cd email_agent
 ```
 
 ### Step 2: Create Virtual Environment
@@ -125,7 +125,7 @@ Qwen is an advanced LLM (Large Language Model) from Alibaba that powers the AI r
 The Qwen model file should be placed in the parent directory of `email_agent`:
 
 ```bash
-cd /home/mate/Desktop/github/llm
+cd ..
 ```
 
 **Option A: Download from Hugging Face (Recommended)**
@@ -147,7 +147,7 @@ wget https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF/resolve/main/Qw
 
 The file should be at:
 ```
-/home/mate/Desktop/github/llm/Qwen2.5-Coder-32B-Instruct-Q4_K_M.gguf
+./Qwen2.5-Coder-32B-Instruct-Q4_K_M.gguf
 ```
 
 The config.json references it as:
@@ -176,7 +176,7 @@ The config.json references it as:
 5. Save as `credentials.json` in the `email_agent` folder:
 
 ```
-/home/mate/Desktop/github/llm/email_agent/credentials.json
+email_agent/credentials.json
 ```
 
 ### Step 3: First Time Authorization
@@ -197,7 +197,7 @@ https://accounts.google.com/o/oauth2/auth?...
 
 **Token location:**
 ```
-/home/mate/Desktop/github/llm/email_agent/token.json
+email_agent/token.json
 ```
 
 ### Credentials Checklist
@@ -212,7 +212,7 @@ https://accounts.google.com/o/oauth2/auth?...
 
 ### config.json Overview
 
-Located at: `/home/mate/Desktop/github/llm/email_agent/config.json`
+Located at: `email_agent/config.json`
 
 **Complete configuration file:**
 
@@ -306,7 +306,7 @@ Email templates are text files containing your outreach email. They support pers
 ### Template Location
 
 ```
-/home/mate/Desktop/github/llm/email_agent/email_to_send/
+email_agent/email_to_send/
 ```
 
 ### File Naming Convention
@@ -382,7 +382,7 @@ john@yourcompany.com
 The Streamlit app provides a beautiful web interface for managing campaigns.
 
 ```bash
-cd /home/mate/Desktop/github/llm/email_agent
+cd email_agent
 source venv/bin/activate
 streamlit run app.py
 ```
@@ -516,7 +516,7 @@ FileNotFoundError: Model not found: /path/to/Qwen2.5-Coder-32B-Instruct-Q4_K_M.g
 ```
 
 **Solution**:
-1. Verify model is downloaded to `/home/mate/Desktop/github/llm/`
+1. Verify model is downloaded to parent directory of email_agent
 2. Check MODEL_PATH in config.json: `"../Qwen2.5-Coder-32B-Instruct-Q4_K_M.gguf"`
 3. Run: `ls -lh ../Qwen2.5-Coder-32B-Instruct-Q4_K_M.gguf`
 
@@ -618,19 +618,19 @@ streamlit run app.py --server.port 8503
 
 ```
 email_agent/
-├── main.py                           # Core pipeline (download, report generation)
-├── send_emails.py                    # Email sending via Gmail API
+├── main.py                          # Core pipeline (download, report generation)
+├── send_emails.py                   # Email sending via Gmail API
 ├── app.py                           # Streamlit dashboard
 ├── config.json                      # Configuration file (DON'T COMMIT)
 ├── requirements.txt                 # Python dependencies
 ├── credentials.json                 # Google OAuth (DON'T COMMIT)
 ├── token.json                       # Google API token (DON'T COMMIT)
 ├── email_to_send/                   # Email templates
-│   └── email_DDMMYYYY.txt          # Template for specific date
+│   └── email_DDMMYYYY.txt           # Template for specific date
 ├── leads_agent_excel_files/         # Downloaded Excel files
-│   └── leads_DDMMYYYY.xlsx         # Downloaded leads data
+│   └── leads_DDMMYYYY.xlsx          # Downloaded leads data
 └── excel_leads_daily_list/          # Generated reports
-    └── report_DDMMYYYY.txt         # AI-generated reports
+    └── report_DDMMYYYY.txt          # AI-generated reports
 ```
 
 ---

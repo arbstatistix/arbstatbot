@@ -11,17 +11,17 @@ If you're setting up the **Email Campaign Manager**, read this first:
 ### Critical Files That Must Be Created/Configured:
 
 1. **`config.json`** - Configuration file
-   - **Location:** `/home/mate/Desktop/github/llm/email_agent/config.json`
+   - **Location:** `email_agent/config.json`
    - **Format:** JSON
    - **Danger:** Add to `.gitignore` before committing
 
 2. **`credentials.json`** - Google OAuth credentials
-   - **Location:** `/home/mate/Desktop/github/llm/email_agent/credentials.json`
+   - **Location:** `email_agent/credentials.json`
    - **Format:** JSON (download from Google Cloud Console)
    - **Danger:** NEVER commit - contains client_secret!
 
 3. **`token.json`** - API access token (AUTO-GENERATED)
-   - **Location:** `/home/mate/Desktop/github/llm/email_agent/token.json`
+   - **Location:** `email_agent/token.json`
    - **Auto-created:** On first run
    - **Danger:** NEVER commit - contains access tokens!
 
@@ -168,7 +168,7 @@ A comprehensive email campaign management system with lead tracking, automated s
 ### 1. Navigate to Email Agent
 
 ```bash
-cd /home/mate/Desktop/github/llm/email_agent
+cd email_agent
 source venv/bin/activate
 ```
 
