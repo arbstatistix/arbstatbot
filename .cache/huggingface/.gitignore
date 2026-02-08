@@ -6,3 +6,4 @@ main.ipynb
 __pycache__
 *.ipynb
 *.json
+*.pyc

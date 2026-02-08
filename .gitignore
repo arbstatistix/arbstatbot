@@ -6,4 +6,5 @@ main.ipynb
 *.gguf
 *.ipynb
 *.json
+*.pyc
 __pycache__
