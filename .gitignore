@@ -4,3 +4,4 @@ cache
 ./cache
 main.ipynb
 *.gguf
+*.ipynb
