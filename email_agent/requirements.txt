@@ -1,0 +1,13 @@
+accelerate
+bitsandbytes
+torch
+transformers
+llama-cpp-python
+pandas
+openpyxl
+pytz
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+streamlit
+APScheduler

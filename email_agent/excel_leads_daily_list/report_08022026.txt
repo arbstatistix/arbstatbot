@@ -1,0 +1,76 @@
+=====================================================================================================================
+OFFICIAL EMAIL LEADS STATUS REPORT
+=====================================================================================================================
+REPORT ID: 08022026
+GENERATED ON: 2026-02-08 18:11:07 IST
+PERIOD: Last 24 Hours (From 2026-02-07 18:11:07 IST to 2026-02-08 18:11:07 IST)
+=====================================================================================================================
+
+---------------------------------------------------------------------------------------------------------------------
+LEAD ID: 1
+NAME: Alice
+COMPANY: ACME
+EMAIL: test1@gmail.com
+STATUS: FAILED
+BOUNCE_REASON_SUMMARY:
+**Summary:** Lead ID: 1 Email: test1@gmail.com First Name: Alice Company: ACME Status: FAILED Sent At:
+2026-02-08 15:25:55+05:30 Bounce Code: 5.1.1 Bounce Reason: The email account that you tried to reach
+does not exist. Please verify the recipient's email address for typos or unnecessary spaces. **Reason
+for No Response:** The email sent to Alice at test1@gmail.com failed to deliver due to
+a bounce code 5.1.1, indicating that the email address does not exist. This suggests that
+there is a typo or the email address is incorrect. It is recommended to double-check
+the recipient's email address for any errors before attempting to resend the email.
+---------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------
+LEAD ID: 2
+NAME: Bob
+COMPANY: GLOBEX
+EMAIL: test2@gmail.com
+STATUS: FAILED
+BOUNCE_REASON_SUMMARY:
+**Summary:** Lead ID: 2 Email: test2@gmail.com First Name: Bob Company: GLOBEX Status: FAILED Sent At:
+2026-02-08 15:27:26+05:30 Bounce Code: 5.2.2 Bounce Reason: The recipient's inbox is out of storage space
+and inactive. **Reason for No Response:** The email to Bob at test2@gmail.com failed to deliver
+due to the recipient's inbox being out of storage space and inactive. This is indicated
+by the bounce code 5.2.2 and the specific bounce reason provided, which suggests that the
+recipient's Gmail account has exceeded its storage limit and is not actively receiving new emails.
+---------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------
+LEAD ID: 5
+NAME: Eva
+COMPANY: GLOBALINK
+EMAIL: eva.brown@business.net
+STATUS: FAILED
+BOUNCE_REASON_SUMMARY:
+**Summary of Lead Non-Response:** **Lead ID:** 5 **Email:** eva.brown@business.net **First Name:** Eva **Company:** GLOBALINK **Status:**
+FAILED **Sent At:** 2026-02-08 15:31:59+05:30 **Bounce Code:** 5.1.1 **Bounce Reason:** 550 5.1.1 <eva.brown@business.net>: Recipient address
+rejected: User unknown in virtual mailbox table **Verified At:** 2026-02-08 15:39:48+05:30 **Reason for No Response:**
+The email sent to Eva Brown at eva.brown@business.net failed to deliver due to a bounce
+code 5.1.1, indicating that the recipient address was rejected because the user is unknown in
+the virtual mailbox table. This suggests that the email address provided is either incorrect or
+no longer valid, as the specified user does not exist at the given domain.
+---------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------
+LEAD ID: 8
+NAME: Henry
+COMPANY: NEXGEN
+EMAIL: henry.martin@test.io
+STATUS: FAILED
+BOUNCE_REASON_SUMMARY:
+**Summary of Lead Non-Response:** **Lead ID:** 8 **Email:** henry.martin@test.io **First Name:** Henry **Company:** NEXGEN **Status:**
+FAILED **Sent At:** 2026-02-08 15:36:32+05:30 **Bounce Code:** 5.4.1 **Bounce Reason:** 550 5.4.1 Recipient address rejected:
+Access denied. For more information see https://aka.ms/EXOSmtpErrors [DU6PEPF00009528.eurprd02.prod.outlook.com 2026-02-08T08:22:52.469Z 08DE63AB4E78E844] **Verified At:** 2026-02-08 15:39:48+05:30 **Reason
+for No Response:** The email sent to Henry Martin at henry.martin@test.io failed to deliver due
+to a bounce code 5.4.1, indicating that the recipient address was rejected with an "Access
+denied" error. This suggests that the email server of the recipient's domain (test.io) has blocked
+the email, likely due to security policies or spam filtering mechanisms. The bounce reason provides
+a link to Microsoft's SMTP error documentation, which can offer more detailed insights into the
+specific access denial policies in place at the recipient's domain.
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+END OF REPORT
+=====================================================================================================================

@@ -5,3 +5,4 @@ cache
 main.ipynb
 *.gguf
 *.ipynb
+*.json
