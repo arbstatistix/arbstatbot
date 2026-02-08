@@ -3,5 +3,6 @@ venv
 cache
 ./cache
 main.ipynb
+__pycache__
 *.ipynb
 *.json
